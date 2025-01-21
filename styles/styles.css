@@ -13,7 +13,7 @@ h1 {
   color: darkblue;
 }
 
-img {
+main img {
   width: 150px;
   height: auto;
   border: 1px solid black;
@@ -22,7 +22,7 @@ img {
 }
 
 p {
-  padding: 10px;
+  padding: 0;
 }
 
 aside {
@@ -30,6 +30,17 @@ aside {
   margin: 5px;
   border: 1px;
   padding: 2px;
-  background-color: gold;
-  color: darkblue;
+  background-color: darkblue;
+  color: gold;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
 }
