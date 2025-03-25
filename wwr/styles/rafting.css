@@ -1,0 +1,49 @@
+/* White water rafting stylesheet */
+
+:root {
+    --primary-color: denim #005BB7;
+    --secondary-color: alice-blue #E8F0FE;
+    --accent1: argentinian-blue #64B5F6;
+    --accent2: charcoal #37474F;
+    --heading-font: "Open Sans", sans-serif;
+    --text-font: "Lato", sans-serif;
+}
+
+div {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+}
+
+.hero img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+h1 {
+    color: coral;
+    font: var(--heading-font);
+    text-align: center;
+    background-color: lightgrey;
+}
+
+h2 {
+    color: lightcoral;
+    font: var(--heading-font);
+    text-align: center;
+}
+
+p {
+    font: var(--heading-font);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
