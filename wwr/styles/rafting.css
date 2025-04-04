@@ -17,15 +17,19 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    margin: 1rem auto;
+    grid-template-columns: 200px 5fr 5fr 5fr;
+    justify-content: space-around;
     align-items: center;
     background-color: #f0f0f0;
     padding: 10px 20px;
 }
 
 header img {
-    height: 60px;
+    margin-left: 80px;
+    width: 100px;
+    height: auto;
 }
 
 nav ul {
@@ -35,11 +39,18 @@ nav ul {
 
 nav a {
     text-decoration: none;
+    display: block;
+    font-size: 18px;
     color: #333;
-    margin-left: 20px;
-    padding: 5px 10px;
+    margin-left: 150px;
+    padding: 5px;
 }
 
+nav a:hover {
+    color: blue;
+    font-weight: 600;
+    text-decoration: underline;
+}
 
 main {
     width: 80%;
