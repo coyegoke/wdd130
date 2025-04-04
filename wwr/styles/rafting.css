@@ -23,20 +23,18 @@ body {
 }
 
 header {
-    display: grid;
+    display: flex;
     margin: 1rem auto;
-    grid-template-columns: repeat(5, 5fr);
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #f0f0f0;
-    padding: 10px 20px;
+    padding: 20px 30px;
 }
 
 header img {
-    margin-left: 80px;
     width: 100px;
     height: auto;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 nav ul {
@@ -50,7 +48,6 @@ nav ul li a {
     display: block;
     font-size: 18px;
     color: #333;
-    margin-left: 100px;
     padding: 5px 10px;
 }
 
@@ -114,34 +111,36 @@ main {
 
 .History {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+}
+
+section h2 {
+    color: red;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 32px;
     text-align: center;
 }
 
-.History h2 {
-    color: red;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
 .History p {
+    flex: 1;
     line-height: 1.6;
     margin-bottom: 10px;
     max-width: 60%;
+    padding: 0 auto;
 }
 
 .History img {
-    width: 30%;
-    height: 30%;
-    margin: 40px 0;
-    order: 2;
+    width: 200px;
+    height: 200px;
+    margin: 0 20px;
 }
 
 .Adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
 }
 
 .Adventure h2 {
@@ -165,9 +164,12 @@ main {
 }
 
 footer {
+    display: flex;
+    align-items: center;
     background-color: #f0f0f0;
     text-align: center;
-    padding: 20px 0;
+    justify-content: space-around;
+    padding: 20px 30px;
 }
 
 footer p {
@@ -175,29 +177,15 @@ footer p {
 }
 
 footer .sociallinks {
-    margin-top: 10px;
     display: flex;
+    margin-top: 10px;
     justify-content: center;
-    gap: 1rem;
 }
 
 footer .sociallinks a {
     margin: 0 10px;
-    display: inline-block;
 }
 
 .sociallinks img {
     height: 30px;
-    width: 30px;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
 }
