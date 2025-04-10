@@ -30,7 +30,7 @@ header {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     padding: 20px;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
 }
 
 header img {
@@ -81,31 +81,22 @@ main {
 }
 
 
-/* .contact {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
 .contact-section {
     max-width: 1000px;
     margin: 0 auto;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
 }
 
-.contact p {
-    flex: 1;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    max-width: 60%;
-    padding: 0 auto;
+.contact-section p {
+    text-align: center;
 }
 
 .headquarters-section,
 .global-section {
     display: flex;
     flex-direction: row;
-    align-items: center;
     width: 100%;
     justify-content: space-between;
     align-items: flex-start;
@@ -113,6 +104,15 @@ main {
 
 .headquarters-section p {
     margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.headquarters-section iframe {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 300;
+    height: 180;
+    border: 0;
 }
 
 .office-info {
@@ -140,50 +140,6 @@ main {
     border-radius: 8px;
 }
 
-.send-message-section {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 40px;
-}
-
-.send-message-section h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.send-message-section p {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.form-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-container div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
-.form-container div input {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.form-container div textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    resize: none;
-    height: 100px;
-}
- */
 
 .employees-section {
     margin-top: 40px;
@@ -215,6 +171,31 @@ main {
     color: #333;
 }
 
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-container div input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container div textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    height: 100px;
+}
+
 form fieldset {
     border: 1px solid #ddd;
     padding: 10px;
@@ -230,6 +211,25 @@ form fieldset legend {
 form fieldset label {
     display: block;
     margin: 5px 0;
+}
+
+.send-message-section {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.send-message-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.send-message-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .send-button {
@@ -357,7 +357,7 @@ section h3 {
 footer {
     display: flex;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #ddd;
     text-align: center;
     justify-content: space-around;
     padding: 20px 30px;
