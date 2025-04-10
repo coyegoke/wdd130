@@ -28,14 +28,14 @@ header {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding: 20px;
-    background-color: #ddd;
+    padding-top: 20px;
+    margin: 0 17%;
+    justify-content: space-between;
 }
 
 header img {
-    height: 50px;
+    height: 70px;
     grid-column: 1;
-    margin-left: 100px;
 }
 
 header nav {
@@ -43,20 +43,20 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    margin-left: 100px;
+    padding: 5px;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
 header nav ul li {
-    margin-left: 50px;
+    margin-left: 70px;
     border: 1px solid #333;
     border-radius: 5px;
+    font-size: 18px;
 }
 
 header nav ul li a {
@@ -84,7 +84,7 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     background-color: #ddd;
-    padding: 20px;
+    padding: 10px 20px;
     border-radius: 5px;
 }
 
@@ -363,14 +363,14 @@ section h3 {
 footer {
     display: flex;
     align-items: center;
-    background-color: #ddd;
+    /* background-color: #ddd; */
     text-align: center;
     justify-content: space-around;
-    padding: 20px 30px;
+    padding: 40px;
 }
 
 footer p {
-    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 footer .sociallinks {
@@ -384,5 +384,5 @@ footer .sociallinks a {
 }
 
 .sociallinks img {
-    height: 30px;
+    height: 20px;
 }
