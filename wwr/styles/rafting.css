@@ -1,18 +1,3 @@
-.open-sans-<uniquifier> {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --primary-color: denim #005BB7;
     --secondary-color: alice-blue #E8F0FE;
@@ -20,6 +5,12 @@
     --accent2: charcoal #37474F;
     --heading-font: "Open Sans", sans-serif;
     --text-font: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
