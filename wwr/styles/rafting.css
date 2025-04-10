@@ -80,11 +80,17 @@ main {
     margin: 20px auto;
 }
 
+
 .contact {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.contact-section {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .contact p {
@@ -97,16 +103,42 @@ main {
 
 .headquarters-section,
 .global-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .headquarters-section p {
-    margin-top: 40px;
-    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
 }
 
+.office-info {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    width: 40%;
+}
 
+.office-info div {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.global-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.global-section p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
 
 .send-message-section {
     background-color: #f0f0f0;
