@@ -20,46 +20,152 @@ body {
     padding: 0;
     line-height: 1.6;
     color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    display: flex;
-    margin: 1rem auto;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
+    padding: 20px;
     background-color: #f0f0f0;
-    padding: 20px 30px;
 }
 
 header img {
-    width: 100px;
-    height: auto;
-    /* border-radius: 50%; */
+    height: 50px;
+    grid-column: 1;
+    margin-left: 100px;
 }
 
-nav ul {
+header nav {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li a {
+header nav ul li {
+    margin-left: 50px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+header nav ul li a {
     text-decoration: none;
-    display: block;
-    font-size: 18px;
-    color: #333;
-    padding: 5px 10px;
+    color: #000;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 5px;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: blue;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: underline;
 }
 
+
 main {
-    width: 90%;
+    width: auto;
     margin: 20px auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact p {
+    flex: 1;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    max-width: 60%;
+    padding: 0 auto;
+}
+
+.headquarters-section,
+.global-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.headquarters-section p {
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.send-message-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.send-message-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.send-message-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-container div input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container div textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    height: 100px;
+}
+
+.send-button {
+    padding: 10px 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
 }
 
 .div.hero {
@@ -71,7 +177,7 @@ main {
 }
 
 .hero img {
-    width: 100%;
+    width: 90%;
     height: auto;
     display: block;
     object-fit: cover;
@@ -117,11 +223,19 @@ main {
 }
 
 section h2 {
-    color: red;
+    color: blue;
     margin-bottom: 20px;
     margin-top: 20px;
     font-size: 32px;
     text-align: center;
+}
+
+section h4 {
+    color: blue;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 32px;
+    text-align: left;
 }
 
 .History p {
@@ -141,10 +255,6 @@ section h2 {
 .Adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-}
-
-.Adventure h2 {
-    color: red;
 }
 
 .Adventure figure {
