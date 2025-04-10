@@ -69,7 +69,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: blue;
+    color: #007bff;
     font-weight: 700;
     text-decoration: underline;
 }
@@ -81,7 +81,7 @@ main {
 }
 
 
-.contact {
+/* .contact {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -183,6 +183,54 @@ main {
     resize: none;
     height: 100px;
 }
+ */
+
+.employees-section {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.employee-profiles figure {
+    text-align: center;
+    width: 250px;
+}
+
+.employee-profiles img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.employee-profiles figcaption {
+    margin-top: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+form fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form fieldset legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form fieldset label {
+    display: block;
+    margin: 5px 0;
+}
 
 .send-button {
     padding: 10px 40px;
@@ -255,20 +303,21 @@ main {
 }
 
 section h2 {
-    color: blue;
+    color: #007bff;
     margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
 }
 
-section h4 {
-    color: blue;
+section h3 {
+    color: #007bff;
     margin-bottom: 5px;
     margin-top: 20px;
-    font-size: 32px;
+    font-size: 24px;
     text-align: left;
 }
+
 
 .History p {
     flex: 1;
