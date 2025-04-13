@@ -5,50 +5,127 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cornelius Oyetunji Oyegoke, WDD130, Sample page">
+    <meta name="description" content="Homepage">
     <meta name="author" content="CORNELIUS OYETUNJI OYEGOKE">
-    <title>Cornelius Oyetunji Oyegoke | WDD 130</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>White Water Rafting - Home Page</title>
 </head>
 
 <body>
     <header>
+        <img src="images/white_water_rafting.jpg" alt="Company logo">
         <nav>
-            <a href="#">Home</a>
-            <!-- The # value for the Home page href anchor link refers to the current page and will not reload the page. -->
-            <a href="wwr/">Rafting Website</a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="trips.html">TRIPS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <h1>CORNELIUS OYETUNJI OYEGOKE | WDD 130</h1>
-        <p>
-            My name is Cornelius Oyetunji Oyegoke, I am eager to start my Software
-            development degree program.
-        </p>
-        <p>
-            I look forward to the best learning, eventful, and successful adventure
-            as I proceed in this journey.
-        </p>
+        <section class="hero">
+            <div>
+                <img src="images/homepage-background.jpg" alt="Background image">
+                <h1>WHITE WATER RAFTING</h1>
+                <p>FEEL FREE TO REACH OUT TO US WITH YOUR INQUIRIES, SUGGESTIONS, OR BOOKING QUESTIONS!</p>
+            </div>
+        </section>
+        <section class="homepage-section">
+            <section>
+                <div>
+                    <h2>High-quality, affordable whitewater adventures</h2>
+                    <p>
+                        SRE provides experiences that are both fun and adventurous while at the same<br>
+                        time sensitive to the cultural and environmental needs of the river. We are able to<br>
+                        accommodate over 300 people a day with a fleet of self bailing rafts, kayaks,<br> and support
+                        vehicles. Our guides are highly-trained, friendly, and knowledgeable and<br>
+                        our safety record is excellent.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Join us for an adventure!</h2>
+                <section class="join-homepage">
+                    <figure>
+                        <img src="images/rafting20.jpg" alt="Rafting Begins Here">
+                    </figure>
+                    <figure>
+                        <img src="images/rafting59.jpg" alt="Rafting Continue">
+                    </figure>
+                    <figure>
+                        <img src="images/rafting22.jpg" alt="Happy Rafting">
+                    </figure>
+                </section>
+                <form class="rent-container">
+                    <button type="submit" class="send-button"><a href="trips.html">RENT THE THINGS YOU NEED</a></button>
+                </form>
+            </section>
+
+            <section class="testimonials-section">
+                <h2>TESTIMONIALS</h2>
+                <div class="testimonials-profiles">
+                    <figure>
+                        <img src="images/happy-african-employee.jpg" alt="Happy Employee 1">
+                        <figcaption>“The White Water Rafting was the first time my kids had been camping, let alone
+                            rafting.<br>
+                            The experience was second to none and made their summer. We’ll be back!”<br>
+                            -Hannah A.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/young-black-man-employee.jpg" alt="Happy Employee 2">
+                        <figcaption>“Easy to use website with a seamless rental & reservation process.<br>
+                            Not to mention, a BEAUTIFUL river.”<br>
+                            -Mike M.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/thumb-up-smiling-joyfully-employee.jpg" alt="Happy Employee 3">
+                        <figcaption>“It is absolutely impossible to not like this company. I challenge you to find a
+                            single
+                            employee who isn't courteous, genuine, and simply excited to help you find the perfect
+                            trip.”<br>
+                            - Jane E.
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="signup-section">
+                <h2>SIGN UP</h2>
+                <p>Kindly fill in your details as indicated below</p>
+                <form class="signup-container">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="send-button">SUBMIT</button>
+                </form>
+            </section>
+        </section>
     </main>
 
-    <aside>
-        <h2>Osun State, Nigeria</h2>
-        <p>
-            Oshun (also Ọṣun, Ochún, and Oxúm) is the Yoruba orisha associated with
-            love, sexuality, fertility, femininity, water, destiny, divination,
-            purity, and beauty, and the Osun River, and of wealth and prosperity in
-            Voodoo. <br />She is considered the most popular and venerated of the
-            401 orishas. <br />In the mythology, Oshun was once the queen consort to
-            King Shango of Oyo, and deified following her death, honored at the
-            Osun-Osogbo Festival, a two-week-long annual festival that usually takes
-            place in August, at the Oṣun-Osogbo Sacred Grove in Osogbo. <br />A
-            violín is a type of musical ceremony in Regla de Ocha performed for
-            Osún. It includes both European classical music and Cuban popular music.
-        </p>
-    </aside>
-
     <footer>
-        <p>© 2025 | Cornelius Oyetunji Oyegoke | Osun State, Nigeria.</p>
+        <p>© Tim White Water Rafting</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook_icon.svg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/x_twitter_new_logo_icon.svg" alt="Twitter"></a>
+            <a href="https://whatsapp.com"><img src="images/whatsapp_icon.svg" alt="WhatsApp"></a>
+        </nav>
     </footer>
 </body>
 
