@@ -477,8 +477,6 @@ tbody tr:hover {
 
 .contact-section p {
     text-align: center;
-    font-family: var(--text-font);
-    font-size: 14px;
 }
 
 .headquarters-section,
@@ -513,6 +511,8 @@ tbody tr:hover {
     flex-direction: column;
     margin-right: 50px;
     width: 40%;
+    font-family: var(--text-font);
+    font-size: 14px;
 }
 
 .office-info div {
